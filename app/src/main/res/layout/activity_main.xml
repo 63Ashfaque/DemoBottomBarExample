@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/purple_500"
+                app:fabCradleMargin="8dp"
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/menuHome"
+                        style="@style/menu_linearLayout">
+
+                        <ImageView
+                            android:id="@+id/imgHome"
+                            style="@style/menu_ImageView"
+                            android:src="@drawable/round_home_24" />
+
+                        <TextView
+                            android:id="@+id/tvHome"
+                            style="@style/menu_textView"
+                            android:text="Home" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menuTransaction"
+                        style="@style/menu_linearLayout">
+
+                        <ImageView
+                            android:id="@+id/imgTransaction"
+                            style="@style/menu_ImageView"
+                            android:src="@drawable/baseline_currency_rupee_24" />
+
+                        <TextView
+                            android:id="@+id/tvTransaction"
+                            style="@style/menu_textView"
+                            android:text="Transaction" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menuNotification"
+                        style="@style/menu_linearLayout">
+
+                        <ImageView
+                            android:id="@+id/imgNotification"
+                            style="@style/menu_ImageView"
+                            android:src="@drawable/round_notifications_24" />
+
+                        <TextView
+                            android:id="@+id/tvNotification"
+                            style="@style/menu_textView"
+                            android:text="Notification" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menuSetting"
+                        style="@style/menu_linearLayout">
+
+                        <ImageView
+                            android:id="@+id/imgSetting"
+                            style="@style/menu_ImageView"
+                            android:src="@drawable/round_settings_24" />
+
+                        <TextView
+                            android:id="@+id/tvSetting"
+                            style="@style/menu_textView"
+                            android:text="Setting" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:foreground="@drawable/fab"
+                app:layout_anchor="@id/bottomBar" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:backgroundTint="@color/purple_500"
+                app:fabCradleMargin="8dp"
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/menuHome1"
+                        style="@style/menu_linearLayout1">
+
+                        <ImageView
+                            android:id="@+id/imgHome1"
+                            style="@style/menu_ImageView"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/round_home_24" />
+
+                        <TextView
+                            android:id="@+id/tvHome1"
+                            style="@style/menu_textView1"
+                            android:text="Home" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menuTransaction1"
+                        style="@style/menu_linearLayout1">
+
+                        <ImageView
+                            android:id="@+id/imgTransaction1"
+                            style="@style/menu_ImageView"
+                            android:src="@drawable/baseline_currency_rupee_24" />
+
+                        <TextView
+                            android:id="@+id/tvTransaction1"
+                            style="@style/menu_textView1"
+                            android:text="Transaction" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            style="@style/menu_ImageView"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/round_home_24" />
+
+                        <TextView
+                            style="@style/menu_textView1"
+                            android:text="Home" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menuNotification1"
+                        style="@style/menu_linearLayout1">
+
+                        <ImageView
+                            android:id="@+id/imgNotification1"
+                            style="@style/menu_ImageView"
+                            android:src="@drawable/round_notifications_24" />
+
+                        <TextView
+                            android:id="@+id/tvNotification1"
+                            style="@style/menu_textView1"
+                            android:text="Notification" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menuSetting1"
+                        style="@style/menu_linearLayout1">
+
+                        <ImageView
+                            android:id="@+id/imgSetting1"
+                            style="@style/menu_ImageView"
+                            android:src="@drawable/round_settings_24" />
+
+                        <TextView
+                            android:id="@+id/tvSetting1"
+                            style="@style/menu_textView1"
+                            android:text="Setting" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:foreground="@drawable/fab"
+                app:layout_anchor="@id/bottomBar1" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+</layout>
